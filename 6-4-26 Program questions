@@ -34,7 +34,7 @@ void main()
     printf("fahrenheit = %f",f);
 }
 
-4. C PROG FOR FAHRENHEIT TO CELSIUS
+4. Write a C PROG FOR FAHRENHEIT TO CELSIUS
 
 #include <stdio.h>
 int main() 
