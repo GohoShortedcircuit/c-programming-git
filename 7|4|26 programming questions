@@ -1,0 +1,121 @@
+7|4|26 CSA0251 C PROGRAMMING
+
+1.) decimal to octal
+
+#include <stdio.h>
+int main()
+{
+    int a = 25;
+    printf("Octal = %o", a);
+    return 0;
+}
+
+2.) octal to decimal
+
+#include<stdio.h>
+int main()
+{
+    int a = 012; 
+    printf("Decimal = %d", a);
+    return 0;
+}
+
+3.) hexadecimal to decimal
+
+#include<stdio.h>
+int main()
+{
+    int a=0xA2;
+    printf("Decimal = %d",a);
+    return 0;
+}
+
+4.) print a character and its ascii number
+
+#include<stdio.h>
+int main()
+{
+    char ch ='g';
+    printf("Char = \'%c\'\n",ch);
+    printf("char ascii number= %d",ch);  
+    return 0;
+}
+
+5.) convert a lowercase character to upper case input 'g'
+
+#include <stdio.h>
+int main()
+{
+    char ch='g';
+    printf("lowercase = %c\n",ch);
+    printf("ASCII = %d\n",ch);
+    printf("Uppercase = %c\n",ch-32);
+    printf("ASCII = %d",ch-32);
+    return 0;
+}
+
+6.) convert a lowercase character to uppercase input 'h'
+
+#include <stdio.h>
+int main()
+{
+    char ch = 'h';
+    printf("Lowercase = %c\n", ch);
+    printf("ASCII = %d\n", ch);
+    printf("Uppercase = %c\n", ch - 32);
+    printf("ASCII = %d",ch - 32);
+    return 0;
+}
+
+7.) swapping two numbers using temporary variable
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20,t;
+    printf("Before swap a=%d b=%d\n",a,b);
+    t=a;
+    a=b;
+    b=t;
+    printf("After swap a=%d b=%d",a,b);
+    return 0;
+}
+
+8.) swapping two numbers without using temporary variable
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20;
+    printf("Before swap a=%d b=%d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("After swap a=%d b=%d",a,b);
+    return 0;
+}
+
+9.) convert upper to lower case input - 'H'
+
+#include<stdio.h>
+int main()
+{
+    char ch='G';
+    printf("Uppercase = %c\n",ch);
+    printf("ASCII = %d\n",ch);
+    printf("lowercase = %c\n",ch+32);
+    printf("ASCII = %d",ch+32);
+    return 0;
+}
+
+10.) convert upper to lower case input - 'H'
+
+#include<stdio.h>
+int main()
+{
+    char ch='H';
+    printf("Uppercase = %c\n",ch);
+    printf("ASCII = %d\n",ch);
+    printf("lowercase = %c\n",ch+32);
+    printf("ASCII = %d",ch+32);
+    return 0;
