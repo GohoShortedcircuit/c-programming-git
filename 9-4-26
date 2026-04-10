@@ -1,0 +1,123 @@
+8-4-26 C PROGRAMMING PRACTICE CODINGS
+
+1. c prog to find the quotient and remainder of two numbers
+
+#include<stdio.h>
+void main()
+{
+    int a=10,b=3,q,r;
+    q=a/b;
+    r=a%b;
+    printf("quotient = %d\n",q);
+    printf("remainder = %d",r);
+}
+
+2. c prog to find area of triangle using implicit defining
+
+#include<stdio.h>
+void main()
+{
+    float b=10,h=5,a;
+    a=1.0/2*b*h;
+    printf("Area = %f",a);
+}
+
+3. write a c prog to find the area of triangle using explicit defining
+
+#include<stdio.h>
+void main()
+{
+    float b=10,h=5,a;
+    a=1/(float)2*b*h;
+    printf("Area = %f",a);
+}
+
+4. c prog to conert days to months and days 
+
+#include<stdio.h>
+void main()
+{
+    int d,m,rem;
+    scanf("%d",&d);
+    m=d/30;
+    rem=d%30;
+    printf("%d mo , %d day",m,rem);
+}
+
+5. c prog to convert days to years , months and days .
+
+#include<stdio.h>
+void main()
+{
+    int d,y,m,rem;
+    scanf("%d",&d);
+    y=d/365;
+    d=d%365;
+    m=d/30;
+    rem=d%30;
+    printf("%d yr , %d mo , %d day",y,m,rem);
+}
+
+6. c prog to find the max of two numbers using if else 
+
+#include<stdio.h>
+void main()
+{
+    int a=10,b=20;
+    if(a>b)
+        printf("Max = %d",a);
+    else
+        printf("Max = %d",b);
+}
+
+7. c prog to find whether the given numbers is positive or negative using if else 
+
+#include<stdio.h>
+void main()
+{
+    int a=-5;
+    scanf("%d",&a);
+    if(a>=0)
+        printf("Positive");
+    else
+        printf("Negative");
+}
+
+8. c prog to find whether the given number is even or odd using if else
+
+#include<stdio.h>
+void main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%2==0)
+        printf("Even");
+    else
+        printf("Odd");
+}
+
+9. c prog to find whether the person is eligible to vote or not , how many years left using if else
+
+#include<stdio.h>
+void main()
+{
+    int age;
+    scanf("%d",&age);
+    if(age>=18)
+        printf("Eligible");
+    else
+        printf("Not Eligible, %d years left",18-age);
+}
+
+10. c prog to find whether the given year is leap year or not using if else
+
+#include<stdio.h>
+void main()
+{
+    int y;
+    scanf("%d",&y);
+    if((y%4==0&&y%100!=0)||y%400==0)
+        printf("Leap Year");
+    else
+        printf("Not Leap Year");
+}
