@@ -1,0 +1,63 @@
+9-4-26 C PROGRAMMING CODES 
+
+1. to find the given two numbers equal or not 
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=10;
+    if(a==b)
+        printf("equal");
+    else
+        printf("not equal");
+    return 0;
+}
+
+2. check if the number is between 1 and 100
+
+#include<stdio.h>
+int main()
+{
+    int a=50;
+    if(a>=1&&a<=100)
+        printf("in range");
+    else
+        printf("out of range");
+    return 0;
+}
+
+3. to check the given number is divisible by 3 and 5 
+
+#include<stdio.h>
+int main()
+{
+    int a=15;
+    if(a%3==0&&a%5==0)
+        printf("divisible by 3 and 5");
+    else
+        printf("not divisible");
+    return 0;
+}
+
+4. use nested if to find the maximum of three numbers 
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20,c=15;
+    if(a>b)
+    {
+        if(a>c)
+            printf("max = %d",a);
+        else
+            printf("max = %d",c);
+    }
+    else
+    {
+        if(b>c)
+            printf("max = %d",b);
+        else
+            printf("max = %d",c);
+    }
+    return 0;
+}
