@@ -1,0 +1,212 @@
+11-4-26  C PROGRAMMING PRACTICE CODES 
+
+1. USE WHILE LOOP TO PRINT HI TEN TIMES 
+
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("hi\n");
+        i++;
+    }
+}
+
+
+2. USE FOR LOOP TO PRINT HI TEN TIMES
+
+#include<stdio.h>
+void main()
+{
+    int i;
+    for(i=1;i<=10;i++)
+        printf("hi\n");
+}
+
+3. USE C PROG TO PRINT 1 TO 10 USING WHILE LOOP
+
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("%d\n",i);
+        i++;
+    }
+}
+
+
+4. WRITE C PROG TO PRITN 1 TO 10
+
+#include<stdio.h>
+void main()
+{
+    int i=10;
+    while(i>=1)
+    {
+        printf("%d\n",i);
+        i--;
+    }
+}
+
+5. C PROG TO PRINT THE ODD NUMBERS 
+
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        if(i%2!=0)
+            printf("%d\n",i);
+        i++;
+    }
+}
+
+6. C PROG TO PRINT THE EVEN NUMBERS
+
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        if(i%2==0)
+            printf("%d\n",i);
+        i++;
+    }
+}
+
+7. TO PRINT SUM OF N NATURAL NUMBERS
+
+#include<stdio.h>
+void main()
+{
+    int i=1,n,sum=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        sum=sum+i;
+        i++;
+    }
+    printf("sum=%d",sum);
+}
+
+8. C PROG TO CALCULATE THE SUM OF EVEN N NATURAL NUMBERS 
+
+#include<stdio.h>
+void main()
+{
+    int i=0,sum=0;
+    while(i<=10)
+    {
+        if(i%2==0)
+            sum=sum+i;
+        i++;
+    }
+    printf("sum=%d",sum);
+}
+
+9. C PROG TO CALCULATE THE SUM OF ODD N NATURAL NUMBERS
+
+#include<stdio.h>
+void main()
+{
+    int i=0,sum=0;
+    while(i<=10)
+    {
+        if(i%2!=0)
+            sum=sum+i;
+        i++;
+    }
+    printf("sum=%d",sum);
+}
+
+10. PROG TO FIND THE FACTORIAL 
+
+#include<stdio.h>
+void main()
+{
+    int n,i=1,f=1;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        f=f*i;
+        i++;
+    }
+    printf("fact=%d",f);
+}
+
+11. PROG TO FIND THE FIBONACCI SERIES 
+
+#include<stdio.h>
+void main()
+{
+    int a=0,b=1,c,i=1,n;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("%d\n",a);
+        c=a+b;
+        a=b;
+        b=c;
+        i++;
+    }
+}
+
+12. PROG TO PRINT THE SUM OF EVEN NUMBERS OF THE FIBONACCI SERIES 
+
+#include<stdio.h>
+void main()
+{
+    int a=0,b=1,c,i=1,n,sum=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(a%2==0)
+            sum=sum+a;
+        c=a+b;
+        a=b;
+        b=c;
+        i++;
+    }
+    printf("sum=%d",sum);
+}
+
+13. PROG TO PRINT THE SUM OF ODD NUMBERS OF THE FIBONACCI SERIES 
+
+#include<stdio.h>
+void main()
+{
+    int a=0,b=1,c,i=1,n,sum=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(a%2==0)
+            sum=sum+a;
+        c=a+b;
+        a=b;
+        b=c;
+        i++;
+    }
+    printf("sum=%d",sum);
+}
+
+14.PROG TO PRINT THE N'TH PLACE TERM OF A FIBONACCI SERIES
+
+#include<stdio.h>
+void main()
+{
+    int a=0,b=1,c,i=1,n;
+    scanf("%d",&n);
+    while(i<n)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+        i++;
+    }
+    printf("%d",a);
+}
